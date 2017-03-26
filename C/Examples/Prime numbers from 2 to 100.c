@@ -18,3 +18,10 @@ int main () {
    return 0;
    getch();
 }
+/*Output
+2 is prime
+3 is prime
+5 is prime
+7 is prime
+
+*/

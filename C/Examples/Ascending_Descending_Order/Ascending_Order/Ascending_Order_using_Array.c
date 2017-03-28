@@ -1,4 +1,4 @@
-//Write a program to arrange N given numbers in assending order
+//Write a program to arrange N given numbers in ascending
 #include<stdio.h>
 int main()
 {

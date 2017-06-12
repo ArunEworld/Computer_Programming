@@ -1,3 +1,4 @@
+//Refer : https://www.tutorialspoint.com/c_standard_library/c_function_rand.htm
 #include <stdio.h>
 #include <stdlib.h>
 

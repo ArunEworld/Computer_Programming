@@ -1,3 +1,4 @@
+//www.aruneworld.com
 //Write a program to find the smallest of N numbers using array
 #include<stdio.h>
 int main()

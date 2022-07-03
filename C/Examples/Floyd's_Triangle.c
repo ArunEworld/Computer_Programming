@@ -10,11 +10,11 @@ void main()
 	{
 		for(j=1;j<=i;j++)
 		{
-				printf("%d\t",k);
-				k++;
+			printf("%d\t",k);
+			k++;
+		}
+		printf("\n");
 	}
-	printf("\n");
-}
 	getch();
 
 }

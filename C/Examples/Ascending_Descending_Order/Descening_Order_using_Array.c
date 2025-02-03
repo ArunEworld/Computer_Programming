@@ -1,3 +1,4 @@
+//Example-1
 #include <stdio.h>
 
 int main(void) {
@@ -33,4 +34,51 @@ printf("\n\t*****************\n");
 
 /* Output is
 11	 22	 33	 44	 55	 66	 77	 77	 88	 99 
+*/
+
+/**************************************************************************************************************/
+//Example-2
+#include <stdio.h>
+
+int main()
+{
+    int aew_temp, aew_arr[5]={20,30,10,25,1};
+    
+    printf("ArunEworld default array values [%d]: ",(int)(sizeof(aew_arr)/sizeof(int)));
+    
+    for(int i=0;i<5;i++)
+    {
+        printf("%d ",i[aew_arr]);
+    }
+        
+    printf("\n\r");
+    
+    for(int j=0;j<(sizeof(aew_arr)/sizeof(int))-1;j++)
+    {
+        for(int i=0;i<(sizeof(aew_arr)/sizeof(int))-1;i++)
+        {
+            if(aew_arr[i]<aew_arr[i+1])
+            {
+                aew_temp = aew_arr[i];
+                aew_arr[i] = aew_arr[i+1];
+                aew_arr[i+1] = aew_temp;
+            }
+        }
+    }
+    
+    printf("ArunEworld array Desending order values [%d]: ",(int)(sizeof(aew_arr)/sizeof(int)));
+    for(int i=0;i<5;i++)
+        printf("%d ",i[aew_arr]);
+
+    return 0;
+}
+
+
+/* Output
+ArunEworld default array values [5]: 20 30 10 25 1 
+ArunEworld array Desending order values [5]: 30 25 20 10 1 
+
+...Program finished with exit code 0
+Press ENTER to exit console.
+
 */

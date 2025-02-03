@@ -82,3 +82,44 @@ ArunEworld array Desending order values [5]: 30 25 20 10 1
 Press ENTER to exit console.
 
 */
+
+/************************************************************************************************************/
+//Example-3:
+#include <stdio.h>
+int main()
+{
+    int aew_temp, len=0,count=0, aew_arr[]={1,2,1,1,14,2,3,2,3,4};//,2,2,5,6,20,30,30,25,30};
+    
+    len = (int)(sizeof(aew_arr)/sizeof(int));
+    printf("ArunEworld default array values [%d]: ",len);
+    
+    for(int i=0;i<len;i++)
+    {
+        printf("%d ",i[aew_arr]);
+    }
+        
+    printf("\n\r");
+    if(len !=1 && len != 0)
+    {
+        for(int i=0; i<len-1;i++)
+        {
+            for(int j=i; j<len-1;j++)
+            {
+                if(aew_arr[i]== aew_arr[j+1])
+                {
+                    for(int k=j+1;k<len-1;k++)
+                        aew_arr[k]=aew_arr[k+1];
+                        
+                    len--;
+                }
+            }
+        }
+    }
+    
+    printf("ArunEworld array Desending order values [%d]: ",len);
+    for(int i=0;i<len;i++)
+        printf("%d ",i[aew_arr]);
+
+    return 0;
+}
+
